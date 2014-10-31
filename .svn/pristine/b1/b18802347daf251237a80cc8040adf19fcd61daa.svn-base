@@ -1,0 +1,53 @@
+
+#background{
+width:1004px;
+height: 1482px;
+border: 1px solid ;
+border-color: rgb(26,57,103);
+margin:0 auto;
+text-align:left;
+background-repeat: no-repeat;
+background-image:url(../image/spirit.jpg);
+}
+.nav
+{
+margin-top:88px;
+margin-left:280px;
+width:530px;
+height:50px;
+transform:rotate(7deg);
+-ms-transform:rotate(7deg); /* Internet Explorer */
+-moz-transform:rotate(7deg); /* Firefox */
+-webkit-transform:rotate(7deg); /* Safari ºÍ Chrome */
+-o-transform:rotate(7deg); /* Opera */
+
+}
+.content1{
+    margin-top: 30px;
+    margin-left: 182px;
+    width: 638px;
+    height: 750px;
+
+   border: 1px solid #24487C;
+
+    font-size:20px;
+    font-family:"Î¢ÈíÑÅºÚ";
+
+
+
+}
+
+.content2{
+    font-size:35px;
+    margin-top: 325px;
+    margin-left: 260px;
+    width: 505px;
+    height: 40px;
+    background-color: 008FD1;
+    color: white;
+
+}
+a:link{ color:#000;text-decoration:none; }     
+a:active{ color:#000; text-decoration:none; }
+a:visited{ color:#000;text-decoration:none; }
+a:hover{ color:#000;text-decoration:underline; }

@@ -1,0 +1,78 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
+%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<base href="<%=basePath%>">
+
+<title>项目信息更新</title>
+<link rel="stylesheet" type="text/css" href="css/back_manage.css">
+<style type="text/css">
+body,html {
+	width: 1004px;
+	padding: 0px;
+	margin: 0px auto; /*设置居中  */
+	text-align: center; /*兼容性更好  */
+}
+</style>
+
+</head>
+
+<body>
+	<div class="body">
+		<div class="top">
+			<img alt="" src="image/manager_top.jpg" />
+		</div>
+		<div class="left">
+			<jsp:include page="left.jsp"></jsp:include>
+		</div>
+		<div class="right">
+			<center>
+				<h1>项目信息更新</h1>
+			</center>
+			<br>
+
+			<form action="update_project.action" method="post">
+				<center>
+					<s:hidden name="project.id" rows="1" cols="10"
+						value="%{project.id}"></s:hidden>
+					<p>
+
+						名&nbsp;&nbsp;称：
+						<s:textarea name="project.title" rows="1" cols="30"
+							value="%{project.title}"></s:textarea><br>
+						开发者：
+						<s:textarea name="project.developers" rows="1" cols="30"
+							value="%{project.developers}"></s:textarea><br>
+						图&nbsp;&nbsp;片：
+						<s:textarea name="project.picsite" rows="1" cols="30"
+							value="%{project.picsite}"></s:textarea><br>
+						技术简介：
+						<s:textarea name="project.technology" rows="1" cols="30"
+							value="%{project.technology}"></s:textarea><br>
+						链&nbsp;&nbsp;接：
+						<s:textarea name="project.link" rows="1" cols="30"
+							value="%{project.link}"></s:textarea><br>
+
+
+
+						<input type="submit" value="提交" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="reset" value="重置" />
+				</center>
+			</form>
+		</div>
+
+
+
+
+	</div>
+
+
+</body>
+</html>
